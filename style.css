@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(223, 233, 235);
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.logo_txt{
+    
+    display: flex;    
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: right;
+    height: 80px;
+    width: 70%;
+   }
+
+.logo{
+    width: 75px;
+    height: 75px;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+}
+
+p {
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.datos label{
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;    
+}
+
+.datos{
+    margin-bottom: 2rem;
+}
+
+.motivo{
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input[type=text],[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+   textarea {
+        width: 300px;
+        margin: auto;
+        border-color: white;
+        background: white;
+        border-radius: 4px;
+      }
+
+  #submit {
+    
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 50px;
+    width: 100px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    border-radius: 20px;
+    }
+
+    .submit {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      }
+ 
+    

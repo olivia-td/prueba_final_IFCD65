@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRUEBA PRACTICA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <div class="logo_txt">
+        <img class="logo" src="src/escuela hosteleria.png" alt="anagrama">      
+    </div>
+
+
+    
+    <form action="Cuestionario" id="survey-form">
+        <div class="datos">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" placeholder="Rellenar datos" required
+                pattern="^[A-Za-záéíóúñÁÉÍÓÚÑ]{2,}([\s][A-Za-záéíóúñÁÉÍÓÚÑ]{2,})+$" mg><br>
+            <label for="name">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="name" placeholder="Rellenar datos" required><br>
+            <label id="email-label">Email de contacto:</label><br>
+            <input type="email" id="email" name="email" placeholder="Introducir datos válidos" required
+                pattern="/^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/"><br>
+            <label id="numero-label">Num. de contacto:</label><br>    
+            <input type="numero" id="numero" name="numero" placeholder="Introducir datos válidos" required
+                pattern="/^((?!\.)[\w-_.]*[^.])(\w+)(\.\w+(\.\w+)?[^.\W])$/"><br>
+        </div>
+
+        <div class="motivo">
+            <label id="name-label">Motivo del contacto</label><br>
+            <select id="dropdown" name="motivo">
+                <option value="disable selected">elige una opción</option>
+                <option value="centrica">Aprender algo nuevo</option>
+                <option value="accesible">Superar mi espectativa</option>
+                <option value="adecuada">Actualizar mi Curriculum</option>
+                <option value="ninguna">Aprovechar mi tiempo</option>
+            </select>
+        </div>
+
+                
+        <div class="redactar">
+            <p>Descripción del problema </p>
+            <textarea name="message" rows="10" cols="50"></textarea>
+            <br>
+            <input id="submit" type="submit" value="enviar">
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
